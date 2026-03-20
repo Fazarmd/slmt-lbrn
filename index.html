@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Lebaran untuk Fikhi</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Bokeh background blobs -->
+  <div class="bokeh">
+    <span style="width:340px;height:340px;top:-90px;left:-80px;background:rgba(160,70,30,0.17);--t:16s;--dx:35px;--dy:25px;"></span>
+    <span style="width:260px;height:260px;bottom:-50px;right:-60px;background:rgba(212,160,74,0.13);--t:20s;--dx:-25px;--dy:-35px;"></span>
+    <span style="width:180px;height:180px;top:45%;left:55%;background:rgba(201,123,106,0.1);--t:12s;--dx:-40px;--dy:20px;"></span>
+  </div>
+
+  <!-- Stars -->
+  <div class="stars" id="stars"></div>
+
+  <!-- Floating flower particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Main card -->
+  <div class="scene">
+    <div class="envelope-outer">
+      <div class="env-body">
+
+        <!-- Envelope header / seal -->
+        <div class="env-top">
+          <div class="seal">🌙</div>
+        </div>
+
+        <!-- Card content -->
+        <div class="card">
+
+          <!-- Corner ornaments -->
+          <div class="orn tl">
+            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+              <path d="M4 68 Q4 4 68 4" stroke="#d4a04a" stroke-width="1" fill="none"/>
+              <path d="M11 68 Q11 11 68 11" stroke="#d4a04a" stroke-width="0.5" fill="none"/>
+              <circle cx="4" cy="4" r="3" fill="#d4a04a"/>
+              <circle cx="4" cy="4" r="6" stroke="#d4a04a" stroke-width="0.6" fill="none"/>
+              <path d="M4 4 L20 4 M4 4 L4 20" stroke="#d4a04a" stroke-width="1"/>
+              <circle cx="30" cy="4" r="1.8" fill="#d4a04a" opacity="0.55"/>
+              <circle cx="4" cy="30" r="1.8" fill="#d4a04a" opacity="0.55"/>
+            </svg>
+          </div>
+          <div class="orn br">
+            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+              <path d="M4 68 Q4 4 68 4" stroke="#d4a04a" stroke-width="1" fill="none"/>
+              <path d="M11 68 Q11 11 68 11" stroke="#d4a04a" stroke-width="0.5" fill="none"/>
+              <circle cx="4" cy="4" r="3" fill="#d4a04a"/>
+              <circle cx="4" cy="4" r="6" stroke="#d4a04a" stroke-width="0.6" fill="none"/>
+              <path d="M4 4 L20 4 M4 4 L4 20" stroke="#d4a04a" stroke-width="1"/>
+              <circle cx="30" cy="4" r="1.8" fill="#d4a04a" opacity="0.55"/>
+              <circle cx="4" cy="30" r="1.8" fill="#d4a04a" opacity="0.55"/>
+            </svg>
+          </div>
+
+          <!-- Moon divider -->
+          <div class="moon-row">
+            <div class="ln"></div>
+            <div class="moon-icon">🌙</div>
+            <div class="ln"></div>
+          </div>
+
+          <!-- Greeting header -->
+          <p class="arabic">Minal Aidzin Wal Faidzin</p>
+          <h1 class="title">Selamat <em>Hari Raya</em><br>Idul Fitri</h1>
+          <p class="year">1 Syawal 1447 H· </p>
+
+          <!-- Ornament divider -->
+          <div class="divider">
+            <div class="dl"></div>
+            <div class="dd">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="dl"></div>
+          </div>
+
+          <!-- Recipient -->
+          <p class="to-label">Untuk</p>
+          <p class="to-name">Fikhi Cahyani 🌸</p>
+
+          <!-- Message -->
+          <div class="message">
+            Selamat Idul Fitri ya, Pikii. Semoga harimu selalu cerah, selalu diberi kemudahan dalam segala urusan,
+            makanannya enak terus dan bantalnya selalu empuk.<br><br>
+
+            Maap ya, kalau selama ini ada hal yang tidak mengenakkan,
+            entah kata-kata atau perbuatan yang salah, atau terlalu diem wkwk. 🌿<br><br>
+
+            Semoga tahun ini kamu selalu diberi kesehatan, rezeki yang melimpah,
+            bahagia terus dan dipertemukan dengan ramadhan berikutnya. <em>💖.</em>
+          </div>
+
+          <!-- CTA -->
+          <div class="cta-row">
+            <button class="cta" id="ctaBtn" onclick="onCta()">✦ &nbsp; Aamiin &nbsp; ✦</button>
+          </div>
+
+          <!-- Signature -->
+          <div class="signature">
+            <div class="sig-line"></div>
+            <p class="sig-label">Dari</p>
+            <p class="sig-name">Kimoy</p>
+          </div>
+
+        </div><!-- /card -->
+
+        <div class="env-bottom"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Doa Modal -->
+  <div class="modal-bg" id="modalBg">
+    <div class="modal">
+      <div class="modal-icon">🤲</div>
+      <h3>THR-nya aku kirim lewat doa ya wwkwk</h3>
+      <p>
+        Taqabbalallaahi minnaa wa minkum taqabbal yaa kariim<br>
+        wa ja’alanaallaahu wa iyyaakum minal ‘aaidin wal faaiziin wal maqbuulin kullu ‘aamin wa antum bi khair<br>
+<br>
+        Aamiin ya Rabbal 'Alamin. 🌙
+      </p>
+      <button class="modal-close" onclick="closeModal()">Aamiin ✨</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
